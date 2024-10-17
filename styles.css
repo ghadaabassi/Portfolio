@@ -15,14 +15,10 @@
 }
 
 body {
-  font-family: "Times New Roman", Times, serif;
-}
-
-body {
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  background-color: #dfe7e7;
   color: #333;
 }
 
@@ -61,4 +57,13 @@ body {
   max-width: 200px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary-1,
+.btn-secondary-1 {
+  background-color: rgb(205, 180, 225);
+  width: 240px;
+  height: 40px;
+  border-radius: 8px;
+  border-style: none;
 }
