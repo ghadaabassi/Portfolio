@@ -1,3 +1,11 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #dfe7e7;
+  color: #333;
+}
+
 .searchButton {
   border-radius: 8px;
   border-width: 2px;
@@ -12,14 +20,6 @@
 
 .porTitle {
   text-align: center;
-}
-
-body {
-  font-family: "Arial", sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #dfe7e7;
-  color: #333;
 }
 
 .container {
@@ -62,7 +62,17 @@ body {
 .btn-primary-1,
 .btn-secondary-1 {
   background-color: rgb(205, 180, 225);
+  height: 40px;
   width: 240px;
+  border-radius: 8px;
+  border-style: none;
+  margin: 3px;
+}
+
+.btn-primary-1:hover,
+.btn-secondary-1:hover {
+  background-color: rgb(207, 195, 216);
+  width: 244px;
   height: 40px;
   border-radius: 8px;
   border-style: none;
