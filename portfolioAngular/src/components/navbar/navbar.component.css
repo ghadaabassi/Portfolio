@@ -1,0 +1,55 @@
+.custom-navbar {
+  background-color: #343a40;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.custom-navbar .navbar-brand {
+  color: #d9534f;
+}
+
+.custom-navbar .nav-link {
+  color: #d9534f;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #c9302c;
+}
+
+.custom-navbar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.custom-navbar .dropdown-menu {
+  background-color: #495057;
+}
+
+.custom-navbar .dropdown-item {
+  color: #fff;
+}
+
+.custom-navbar .dropdown-item:hover {
+  background-color: rgba(217, 83, 79, 0.2);
+}
+
+.form-inline {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.form-control {
+  border-radius: 20px;
+  margin-right: 10px;
+  width: auto;
+}
+
+.btn-outline-success {
+  border-color: #d9534f;
+  color: #d9534f;
+}
+
+.btn-outline-success:hover {
+  background-color: rgba(217, 83, 79, 0.2);
+  color: #fff;
+}

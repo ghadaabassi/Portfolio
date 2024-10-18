@@ -1,11 +1,3 @@
-body {
-  font-family: "Arial", sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #e9f5f5;
-  color: #333;
-  overflow: hidden;
-}
 
 .porTitle {
   margin: 20px 0;
@@ -15,6 +7,7 @@ body {
 }
 
 .container {
+  font-family: "Times New Roman", Times, serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,19 +48,18 @@ body {
 
 .projImage {
   border: 6px solid rgb(0, 0, 0);
-  background-color: #c3a3e5;
-  border-top-left-radius: 17px;
-  border-bottom-right-radius: 17px;
+  border-top-left-radius: 27px;
+  border-bottom-right-radius: 27px;
   border-width: 2px;
   width: 210px;
   height: 200px;
-  background-color: rgb(238, 199, 199);
+  background-color: rgb(237, 211, 211);
   margin: 6px;
 }
 
 .projImage:hover {
   transform: scale(1.05);
-  background-color: rgba(225, 65, 65, 0.5);
+  background-color: rgba(142, 28, 28, 0.5);
 }
 
 .btn-primary,
