@@ -1,39 +1,42 @@
 <div>
-  <h1 class="porTitle">Welcome to my Portfolio</h1>
+  <header>
+    <h1 class="porTitle">Welcome to My Portfolio</h1>
+  </header>
 
-  <div class="container">
-    <div class="text">
+  <main class="container">
+    <section class="text">
       <h2>I am Ghada Abassi</h2>
       <h3>I am a Software Engineer</h3>
-      <p>This is my portfolio. You will find all about me here.</p>
+      <p>This is my portfolio. You will find all about me in here.</p>
       <button type="button" class="btn btn-primary">More About Me</button>
       <button type="button" class="btn btn-secondary">GitHub</button>
-    </div>
-    <div class="image">
-      <img src="photo.png" alt="Ghada Abassi" />
-    </div>
-  </div>
+    </section>
+    <section class="image">
+      <img src="photo.png" alt="Ghada Abassi - Software Engineer" />
+    </section>
+  </main>
+  <div style="overflow: hidden; padding: 4px">
+    <h2>My Projects</h2>
 
-  <h2>My Projects</h2>
-  <div class="container p-4">
     <section>
       <div class="row">
         <div
           class="col-lg-2 col-md-12 mb-4 mb-md-0"
           *ngFor="let project of projects"
         >
-          <div
-            data-mdb-ripple-init
-            class="bg-image hover-overlay shadow-1-strong rounded"
-            data-ripple-color="light"
-          >
-            <a [href]="project.link">
-              <img [src]="project.imageUrl" class="w-100" />
+          <div data-mdb-ripple-init data-ripple-color="light">
+            <a [href]="project.link" target="_blank" rel="noopener noreferrer">
+              <img
+                [src]="project.imageUrl"
+                class="projImage"
+                alt="{{ project.title }} image"
+              />
               <div
                 class="mask"
                 style="background-color: rgba(251, 251, 251, 0.2)"
               ></div>
             </a>
+            <p class="project-name">{{ project.title }}</p>
           </div>
         </div>
       </div>

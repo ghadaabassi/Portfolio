@@ -11,28 +11,34 @@ import { CommonModule } from '@angular/common';
 export class HomeComponent {
   projects = [
     {
-      imageUrl: 'https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp',
-      link: '#',
+      title: 'AVA',
+      imageUrl: 'travel.png',
+      link: 'https://github.com/ghadaabassi/AVA.git',
     },
     {
-      imageUrl: 'https://mdbcdn.b-cdn.net/img/new/fluid/city/111.webp',
-      link: '#',
+      title: 'Data Analyser',
+      imageUrl: 'mag.png',
+      link: 'https://github.com/ghadaabassi/Mooc_Data_Analyser.git',
     },
     {
-      imageUrl: 'https://mdbcdn.b-cdn.net/img/new/fluid/city/112.webp',
-      link: '#',
+      title: 'Art Gallery',
+      imageUrl: 'art.png',
+      link: 'https://github.com/ghadaabassi/Art_Gallery_Project.git',
     },
     {
-      imageUrl: 'https://mdbcdn.b-cdn.net/img/new/fluid/city/114.webp',
-      link: '#',
+      title: 'Jenkins Pipline',
+      imageUrl: 'jk.png',
+      link: 'https://github.com/ghadaabassi/PipelineSpringBoot.git',
     },
     {
-      imageUrl: 'https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp',
-      link: '#',
+      title: 'Subway Clone',
+      imageUrl: 'sub.png',
+      link: 'https://github.com/ghadaabassi/Subway_Clone.git',
     },
     {
-      imageUrl: 'https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp',
-      link: '#',
+      title: '3D Chair',
+      imageUrl: 'chair.png',
+      link: 'https://github.com/ghadaabassi/Chair_3D.git',
     },
   ];
 }
