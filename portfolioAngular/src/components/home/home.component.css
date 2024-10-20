@@ -121,6 +121,7 @@
 .skills-content {
   display: flex;
   align-items: center;
+  font-size: 20px;
 }
 
 .skills-image {
@@ -130,7 +131,7 @@
 }
 
 .skills-image img {
-  width: 100%;
+  width: 300px;
 }
 
 .skills-grid {
@@ -139,4 +140,36 @@
   gap: 20px;
   justify-content: center;
   flex: 1;
+}
+
+.vision-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.vision {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.vision-content {
+  display: flex;
+  align-items: center;
+}
+
+.vision-image {
+  flex: 0 0 150px;
+  margin-left: 20px;
+}
+
+.vision-image img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.vision-text {
+  flex: 1;
+  padding: 20px;
+  font-size: 20px;
 }
