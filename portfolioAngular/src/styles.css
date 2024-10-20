@@ -1,9 +1,8 @@
 * {
   font-family: "Times New Roman", Times, serif;
-  background-color: black;
   color: white;
-
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: rgb(215, 202, 202);
 }
