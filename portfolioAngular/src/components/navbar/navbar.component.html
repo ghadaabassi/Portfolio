@@ -20,12 +20,20 @@
         <a class="nav-link" href="#">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://www.linkedin.com/in/ghadaabassi/"
+        <a
+          class="nav-link"
+          target="_blank"
+          href="https://www.linkedin.com/in/ghadaabassi/"
           >LinkedIn</a
         >
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://github.com/ghadaabassi">Github</a>
+        <a
+          class="nav-link"
+          target="_blank"
+          href="https://github.com/ghadaabassi"
+          >Github</a
+        >
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -45,11 +53,7 @@
       class="btn btn-link"
       (click)="toggleTheme()"
     >
-      <i
-        id="theme-icon"
-        [ngClass]="{ 'fa-moon': !darkMode, 'fa-sun': darkMode }"
-      ></i
-      >🌘🌞
+      🌘🌞
     </button>
   </div>
 </nav>
