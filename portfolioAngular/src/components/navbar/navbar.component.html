@@ -31,7 +31,6 @@
     <form class="form-inline my-2 my-lg-0">
       <input
         class="form-control mr-sm-2"
-    
         type="search"
         placeholder="Search"
         aria-label="Search"
@@ -40,5 +39,17 @@
         Search
       </button>
     </form>
+    <button
+      style="text-decoration: none"
+      id="theme-toggle"
+      class="btn btn-link"
+      (click)="toggleTheme()"
+    >
+      <i
+        id="theme-icon"
+        [ngClass]="{ 'fa-moon': !darkMode, 'fa-sun': darkMode }"
+      ></i
+      >🌘🌞
+    </button>
   </div>
 </nav>

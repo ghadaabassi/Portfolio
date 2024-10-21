@@ -49,7 +49,6 @@
       </div>
     </section>
   </div>
-  
 
   <div>
     <h2>My Projects</h2>
@@ -60,33 +59,70 @@
           *ngFor="let project of projects"
         >
           <div>
-            <a [href]="project.link" target="_blank" rel="noopener noreferrer">
-              <img
-                [src]="project.imageUrl"
-                class="projImage"
-                alt="{{ project.title }} image"
-              />
+            <a  [href]="project.link" target="_blank" style="text-decoration: none;"  >
+              <div class="projDiv">
+                <p class="project-name">{{ project.title }}</p>
+              </div>
             </a>
-            <p class="project-name">{{ project.title }}</p>
           </div>
         </div>
       </div>
     </section>
   </div>
+
   <div>
-    <h2 class="vision-title">Vision and Goals</h2>
-    <section class="vision">
-      <div class="vision-content">
-        <div class="vision-text">
-          <p>
-            My vision is to leverage technology to create innovative solutions that improve everyday life. I aim to continually enhance my skills and contribute to projects that drive positive change.
-          </p>
+    <section class="experiences-hobbies">
+      <div class="experience">
+        <h3>Experience</h3>
+        <div class="experience-item">
+          <div>
+            <h3>Software Engineer at TechCompany</h3>
+            <p>Developed robust software solutions and led project teams.</p>
+          </div>
         </div>
-        <div class="vision-image">
-          <img src="vision.gif" alt="Vision Animation" />
+        <div class="experience-item">
+          <div>
+            <h3>Intern at Innovative Solutions</h3>
+            <p>
+              Gained hands-on experience in web development and database
+              management.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hobbies">
+        <h3>Hobbies</h3>
+        <div class="hobby-item">
+          <div>
+            <h3 >Photography</h3>
+            <p>Capturing moments and landscapes with a creative eye.</p>
+          </div>
+        </div>
+        <div class="hobby-item">
+          <div>
+            <h3>Traveling</h3>
+            <p>Exploring new cultures and destinations around the world.</p>
+          </div>
         </div>
       </div>
     </section>
+
+    <div>
+      <h2 class="vision-title">Vision and Goals</h2>
+      <section class="vision">
+        <div class="vision-content">
+          <div class="vision-text">
+            <p>
+              My vision is to leverage technology to create innovative solutions
+              that improve everyday life. I aim to continually enhance my skills
+              and contribute to projects that drive positive change.
+            </p>
+          </div>
+          <div class="vision-image">
+            <img src="vision.gif" alt="Vision Animation" />
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
-  
 </div>
