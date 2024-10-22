@@ -1,5 +1,5 @@
 <div class="login-container">
-  <h2>Join Us !</h2>
+  <h2>Welcome Back !</h2>
   <form (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="email">Email</label>
@@ -24,5 +24,9 @@
       />
     </div>
     <button type="submit" class="btn-primary">Login</button>
+    <div class="new">
+      <span>New Here?</span
+      ><a routerLink="signup" routerLinkActive="active" class="join">Join Us</a>
+    </div>
   </form>
 </div>
