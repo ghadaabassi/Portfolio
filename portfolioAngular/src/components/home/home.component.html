@@ -59,7 +59,11 @@
           *ngFor="let project of projects"
         >
           <div>
-            <a  [href]="project.link" target="_blank" style="text-decoration: none;"  >
+            <a
+              [href]="project.link"
+              target="_blank"
+              style="text-decoration: none"
+            >
               <div class="projDiv">
                 <p class="project-name">{{ project.title }}</p>
               </div>
@@ -69,6 +73,8 @@
       </div>
     </section>
   </div>
+
+  <app-pub></app-pub>
 
   <div>
     <section class="experiences-hobbies">
@@ -94,7 +100,7 @@
         <h3>Hobbies</h3>
         <div class="hobby-item">
           <div>
-            <h3 >Photography</h3>
+            <h3>Photography</h3>
             <p>Capturing moments and landscapes with a creative eye.</p>
           </div>
         </div>

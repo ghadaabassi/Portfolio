@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-pub',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './pub.component.html',
   styleUrl: './pub.component.css',
 })
 export class PubComponent {
-  projects = [
+  pubs = [
     {
       title: 'IA can help ypu travel',
       imageUrl: 'travel.png',
