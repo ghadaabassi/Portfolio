@@ -1,14 +1,14 @@
-<div class="container">
+<div>
   <div>
-    <h2>New Pubs</h2>
+    <h2 style="text-align: center; margin: 30px">New Pubs</h2>
     <section>
       <div class="row">
-        <div class="col-lg-2 col-md-12 mb-4 mb-md-0" *ngFor="let pub of pubs">
-          <div>
+        <div class="col-lg-2 col-md-4 mb-4" *ngFor="let pub of pubs">
+          <div class="pubDiv">
+            <img [src]="pub.imageUrl" />
             <a [href]="pub.link" target="_blank" style="text-decoration: none">
-              <div class="projDiv">
-                <p class="project-name">{{ pub.title }}</p>
-              </div>
+              <p class="project-name">{{ pub.title }}</p>
+              <p class="project-content">{{ pub.content }}</p>
             </a>
           </div>
         </div>

@@ -14,31 +14,37 @@ export class PubComponent {
       title: 'IA can help ypu travel',
       imageUrl: 'travel.png',
       link: 'https://github.com/ghadaabassi/AVA.git',
+      content: 'helloo have a nice a day guess what happened',
     },
     {
       title: 'Data Analyser',
       imageUrl: 'mag.png',
       link: 'https://github.com/ghadaabassi/Mooc_Data_Analyser.git',
+      content: 'helloo have a nice a day guess what happened',
     },
     {
       title: 'Art and IA',
       imageUrl: 'art.png',
       link: 'https://github.com/ghadaabassi/Art_Gallery_Project.git',
+      content: 'helloo have a nice a day guess what happened',
     },
     {
       title: 'Jenkins Pipline can make your life easy',
       imageUrl: 'jk.png',
       link: 'https://github.com/ghadaabassi/PipelineSpringBoot.git',
+      content: 'helloo have a nice a day guess what happened',
     },
     {
-      title: 'Subway Clone new version',
-      imageUrl: 'sub.png',
-      link: 'https://github.com/ghadaabassi/Subway_Clone.git',
+      title: 'Jenkins Pipline can make your life easy',
+      imageUrl: 'art.png',
+      link: 'https://github.com/ghadaabassi/PipelineSpringBoot.git',
+      content: 'helloo have a nice a day guess what happened',
     },
     {
-      title: '3D Modeling you should learn it',
-      imageUrl: 'chair.png',
-      link: 'https://github.com/ghadaabassi/Chair_3D.git',
+      title: 'Jenkins Pipline can make your life easy',
+      imageUrl: 'travel.png',
+      link: 'https://github.com/ghadaabassi/PipelineSpringBoot.git',
+      content: 'helloo have a nice a day guess what happened',
     },
   ];
 }
