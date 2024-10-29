@@ -178,7 +178,6 @@
   flex: 1;
   padding: 20px;
   font-size: 20px;
-
 }
 
 .experiences-hobbies {
@@ -197,7 +196,6 @@
   display: flex;
   align-items: center;
   margin-bottom: 15px;
- 
 }
 
 .experience-image,
@@ -213,12 +211,13 @@ h2 {
   color: #271919;
 }
 
-.hobby-item h3,.experience-item h3{
+.hobby-item h3,
+.experience-item h3 {
   color: #ac2828;
 }
 
-.experiences-hobbies{
-
+.experiences-hobbies {
   margin: 12px;
   margin-top: 42px;
 }
+
