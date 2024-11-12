@@ -1,0 +1,56 @@
+.dialog-container {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.dialog-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.dialog-container p {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-cancel,
+.btn-confirm {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-cancel {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.btn-cancel:hover {
+  background-color: #e2e6ea;
+}
+
+.btn-confirm {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-confirm:hover {
+  background-color: #c82333;
+}
+
+
+

@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-pub',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MatDialogModule],
   templateUrl: './pub.component.html',
   styleUrl: './pub.component.css',
+  
 })
 export class PubComponent {
   pubs = [
@@ -44,7 +46,8 @@ export class PubComponent {
       title: 'Jenkins Pipline can make your life easy',
       imageUrl: 'travel.png',
       link: 'https://github.com/ghadaabassi/PipelineSpringBoot.git',
-      content: 'helloo have a nice a day guess what happened',
+      content: 'hello have a nice a day guess what happened',
     },
   ];
+
 }
