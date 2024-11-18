@@ -9,8 +9,6 @@
 
 .dark-mode * {
   background-color: black;
-  background-color: rgb(215, 202, 202);
-  font-size: 90px;
   padding: 0px;
 }
 
