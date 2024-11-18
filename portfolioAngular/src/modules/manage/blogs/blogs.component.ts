@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { PopUpComponent } from '../pop-up/pop-up.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-blogs',
+  standalone: true,
+  imports: [ReactiveFormsModule, CommonModule],
   templateUrl: './blogs.component.html',
   styleUrls: ['./blogs.component.css'],
 })
@@ -25,6 +29,13 @@ export class BlogsComponent {
 
   constructor(public dialog: MatDialog) {}
 
+  navigate(): void {
+    this.dialog.open(PopUpComponent);
+  }
+}
+
+/*
+
   confirmDelete(blog: any): void {
     const dialogRef = this.dialog.open(PopUpComponent);
 
@@ -36,4 +47,5 @@ export class BlogsComponent {
       }
     });
   }
-}
+
+*/

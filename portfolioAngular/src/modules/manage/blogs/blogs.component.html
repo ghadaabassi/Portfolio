@@ -1,15 +1,11 @@
 <div class="row">
   <div class="col-lg-4 col-md-6 mb-4" *ngFor="let blog of blogs">
-    <div class="blogDiv card">
-      <img [src]="blog.imageUrl" class="card-img-top" />
+    <div class="card">
+      <img [src]="blog.imageUrl" class="card-img-top" alt="Blog Image" />
       <div class="card-body">
-        <a [href]="blog.link" target="_blank" style="text-decoration: none">
-          <h5 class="card-title">{{ blog.title }}</h5>
-          <p class="card-text">{{ blog.content }}</p>
-        </a>
-        <button class="btn btn-danger" (click)="confirmDelete(blog)">
-          Delete
-        </button>
+        <h5 class="card-title">{{ blog.title }}</h5>
+        <p class="card-text">{{ blog.content }}</p>
+        <button class="btn btn-primary" (click)="navigate()">Sign Up</button>
       </div>
     </div>
   </div>

@@ -5,12 +5,14 @@ import { PopUpComponent } from './pop-up/pop-up.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { RouterModule, Routes } from '@angular/router';
 
-const manageRoutes: Routes = [
-  { path: 'blogs', component: BlogsComponent },
-  { path: 'popups', component: PopUpComponent },
-];
+const manageRoutes: Routes = [{ path: '', component: BlogsComponent }];
+
 @NgModule({
-  declarations: [BlogsComponent],
-  imports: [CommonModule, MatDialogModule, RouterModule.forChild(manageRoutes)],
+ 
+  imports: [
+    CommonModule,
+    MatDialogModule,
+    RouterModule.forChild(manageRoutes)
+  ]
 })
 export class ManageModule {}
