@@ -6,6 +6,11 @@
         <h5 class="card-title">{{ blog.title }}</h5>
         <p class="card-text">{{ blog.content }}</p>
         <button class="btn btn-primary" (click)="navigate()">Sign Up</button>
+        <button class="btn btn-primary" (click)="incrementValue()">
+          ADD To Cart 🛒:
+        </button>
+        <button class="btn btn-primary" (click)="delete()">Delete</button>
+        <p>Your Cart 🛒: {{ currentValue }}</p>
       </div>
     </div>
   </div>

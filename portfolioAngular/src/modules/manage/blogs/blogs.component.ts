@@ -19,15 +19,24 @@ export class BlogsComponent {
       title: 'Blog 1',
       content: 'Blog Content 1',
     },
-    {
-      imageUrl: 'art.png',
-      link: '#',
-      title: 'Blog 2',
-      content: 'Blog Content 2',
-    },
   ];
 
   constructor(public dialog: MatDialog) {}
+  currentValue: number = 0;
+
+  ngOnInit() {
+    const storedValue = localStorage.getItem('currentValue');
+    this.currentValue = storedValue ? parseInt(storedValue, 10) : 0;
+  }
+  incrementValue() {
+    this.currentValue += 1;
+    localStorage.setItem('currentValue', this.currentValue.toString());
+  }
+
+  delete() {
+    this.currentValue = 0;
+    localStorage.removeItem('currentValue');
+  }
 
   navigate(): void {
     this.dialog.open(PopUpComponent);
