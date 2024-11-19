@@ -4,12 +4,14 @@ import { HomeComponent } from '../components/home/home.component';
 import { LoginComponent } from '../components/login/login.component';
 import { SignupComponent } from '../components/signup/signup.component';
 import { WelcomeComponent } from '../components/welcome/welcome.component';
+import { QRCodeComponent } from '../components/qr-code/qr-code.component';
 
 export const routes: Routes = [
   { path: 'welcome/:email', component: WelcomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
   { path: 'signup', component: SignupComponent },
+  { path: 'QR', component: QRCodeComponent },
   {
     path: 'manage',
     loadChildren: () =>

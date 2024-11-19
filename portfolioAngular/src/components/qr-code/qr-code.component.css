@@ -1,0 +1,30 @@
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.card h3 {
+  font-weight: 700;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #3f0708;
+  border-color: #d5e0eb;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s, border-color 0.3s;
+  margin: 5px;
+}
+
+.btn-primary:hover {
+  background-color: #594041;
+  border-color: #515a64;
+}
