@@ -1,0 +1,42 @@
+<div class="hero">
+  <video class="hero-video" autoplay muted loop poster="thub.jpg">
+    <source
+      src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+      type="video/mp4"
+    />
+    Your browser does not support the video tag.
+  </video>
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1 >Latest Serie</h1>
+      <div class="hero-buttons">
+        <button class="play"><i></i> 🔺Play</button>
+        <button class="more">
+          <i class="fas fa-info-circle"></i>⏷ More Info
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2 >My List</h2>
+  <section>
+    <div class="row">
+      <div
+        class="col-lg-3 col-md-6 col-sm-12 mb-4"
+        *ngFor="let video of videos"
+      >
+        <div>
+          <a [href]="video.link" target="_blank" style="text-decoration: none">
+            <video [poster]="video.imageUrl" class="video-item" controls>
+              <source [src]="video.url" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </a>
+          <p class="project-name">{{ video.title }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

@@ -4,11 +4,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(215, 202, 202);
+  background-color: black;
 }
 
 .dark-mode * {
-  background-color: black;
+  background-color: rgb(215, 202, 202);
+
   padding: 0px;
 }
 
