@@ -1,0 +1,60 @@
+<nav
+  class="navbar navbar-expand-lg"
+  style="padding: 10px 20px"
+>
+  <a class="navbar-brand" routerLink="/">
+    <img src="netflix-logo.png" alt="Netflix Logo" height="70" />
+  </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">TV shows</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Movies</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Latest</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">My list</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">By Langague</a>
+      </li>
+    </ul>
+    <form class="form-inline">
+      <button
+      class="btn  text-light"
+      id="theme-toggle"
+      (click)="toggleTheme()"
+      style="margin-left: 15px"
+    >
+    🔔
+    </button>
+      <a class="nav-link" href="#">Kids</a>
+    </form>
+    <button
+      class="btn btn-link"
+      id="theme-toggle"
+      (click)="toggleTheme()"
+      style="margin-left: 15px"
+    >
+    ⏷
+    </button>
+  </div>
+</nav>

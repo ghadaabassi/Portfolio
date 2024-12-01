@@ -4,20 +4,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: black;
+  background-color: rgb(215, 202, 202);
 }
 
 .dark-mode * {
-  background-color: rgb(215, 202, 202);
-
+  background-color: black;
   padding: 0px;
 }
 
 html,
 body {
   height: 100%;
-}
-body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+

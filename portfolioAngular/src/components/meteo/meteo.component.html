@@ -1,0 +1,59 @@
+<div>
+  <h1 style="text-align: center">Weather Report</h1>
+  <div class="container">
+    <div class="totalCont">
+      <div class="weather-container">
+        <div class="image-container">
+          <img src="sun.png" alt="Weather Image" class="rotating-image" />
+        </div>
+        <div class="content-container">
+          <div class="input-container">
+            <label for="location">Select Location:</label>
+            <select
+              style="border-color: rgb(45, 30, 30)"
+              id="location"
+              [(ngModel)]="selectedLocation"
+            >
+              <option *ngFor="let location of locations" [value]="location">
+                {{ location }}
+              </option>
+            </select>
+            <button (click)="fetchWeather()">Get Weather</button>
+          </div>
+          <div *ngIf="realtimeWeatherData" class="weather-info">
+            <p class="title">Weather today 🌤️</p>
+            <p>
+              Temperature: {{ realtimeWeatherData.data.values.temperature }} °C
+            </p>
+            <p>Humidity: {{ realtimeWeatherData.data.values.humidity }} %</p>
+            <p>
+              Wind Speed: {{ realtimeWeatherData.data.values.windSpeed }} km/h
+            </p>
+            <p>
+              Visibility: {{ realtimeWeatherData.data.values.visibility }} km
+            </p>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="forecastWeatherData" class="forecast-container">
+        <p class="title">Weather Forecast ⛈️</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Temperature (°C)</th>
+              <th>Wind Speed (km/h)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let forecast of forecastWeatherData.timelines.daily">
+              <td>{{ forecast.time }}</td>
+              <td>{{ forecast.values.temperatureMax }}</td>
+              <td>{{ forecast.values.windSpeedMax }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

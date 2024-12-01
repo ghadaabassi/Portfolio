@@ -1,0 +1,43 @@
+* {
+    color: white;
+  }
+  .custom-navbar .navbar-brand {
+    color: #d9534f;
+    background-color: black;
+  }
+  
+  .custom-navbar .nav-link {
+    color: #d9534f;
+    transition: color 0.3s ease;
+  }
+  
+  .custom-navbar .nav-link:hover {
+    color: #680d0a;
+  }
+  
+  .form-inline {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .form-control {
+    border-radius: 20px;
+    margin-right: 10px;
+    width: auto;
+  }
+  
+  .form-control:focus {
+    border-color: rgba(217, 83, 79, 0.2);
+    box-shadow: 0 0 15px rgba(217, 83, 79, 0.5);
+  }
+  
+  .btn-outline-success {
+    border-color: #d9534f;
+    color: #d9534f;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: rgba(217, 83, 79, 0.2);
+  }
+  
