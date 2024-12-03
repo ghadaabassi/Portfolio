@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from '../../environment/environment';
 
@@ -19,5 +19,12 @@ export class MeteoService {
   getForecastWeather(location: string): Observable<any> {
     const url = `${this.forecastApiUrl}?location=${location}&apikey=${this.apiKey}`;
     return this.http.get(url);
+  }
+
+  private apiUrl = 'https://image.pollinations.ai/prompt/';
+  private apiKey1 = environment.api1;
+
+  generateImage(prompt: string): string {
+    return this.apiUrl + encodeURIComponent(prompt);
   }
 }

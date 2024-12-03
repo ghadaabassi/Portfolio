@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="input-group">
+    <input #promptInput type="text" placeholder="Enter image description" />
+    <button (click)="generateImage(promptInput.value)">Generate Image</button>
+  </div>
+
+  <div *ngIf="imageUrl" class="image-container">
+    <img [src]="imageUrl" alt="Generated Image" />
+  </div>
+</div>
