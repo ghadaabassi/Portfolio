@@ -22,9 +22,14 @@ export class MeteoService {
   }
 
   private apiUrl = 'https://image.pollinations.ai/prompt/';
-  private apiKey1 = environment.api1;
 
   generateImage(prompt: string): string {
     return this.apiUrl + encodeURIComponent(prompt);
+  }
+
+  private apiUrl1 = 'http://localhost:3000/create-checkout-session';
+
+  createCheckoutSession(items: any[]): Observable<any> {
+    return this.http.post<any>(this.apiUrl1, { items });
   }
 }
